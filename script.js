@@ -141,16 +141,6 @@ document.addEventListener('DOMContentLoaded', function () {
         header.classList.toggle('scrolled', window.scrollY > 100);
     });
 
-    // Form submission
-    const contactForm = document.getElementById('contactForm');
-    if (contactForm) {
-        contactForm.addEventListener('submit', function (e) {
-            e.preventDefault();
-            alert('Thank you for your message! I will get back to you soon.');
-            this.reset();
-        });
-    }
-
     // Initial active link update
     updateActiveLink();
 
