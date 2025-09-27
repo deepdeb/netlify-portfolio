@@ -147,3 +147,21 @@ document.addEventListener('DOMContentLoaded', function () {
     // Scroll event listener with throttling
     window.addEventListener('scroll', throttledUpdateActiveLink);
 });
+
+function openVideo() {
+    const videoUrl = './assets/videos/ConnectCircleLanding.mp4';  // Replace with your video path
+    const videoWindow = window.open('', '_blank', 'width=800,height=600');
+    videoWindow.document.write(`
+            <html>
+                <head>
+                    <title>Video</title>
+                </head>
+                <body style="margin: 0; display: flex; justify-content: center; align-items: center; height: 100vh; background-color: #000;">
+                    <video width="100%" height="auto" controls autoplay muted>
+                        <source src="${videoUrl}" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </body>
+            </html>
+        `);
+}
