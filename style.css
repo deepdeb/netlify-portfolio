@@ -288,7 +288,7 @@ header.scrolled {
   display: inline-block;
   color: white;
   transform: translateY(0);
-  animation: floatText 3s ease-in-out infinite;
+  /* animation: floatText 3s ease-in-out infinite; */
 }
 
 [data-theme="light"] .hero-content h1 span {
